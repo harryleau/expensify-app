@@ -1,5 +1,5 @@
 {
-  "name": "Boilerplate",
+  "name": "expensify",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,6 +25,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-modal": "^3.4.5",
+    "react-router-dom": "^4.3.1",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "validator": "^10.3.0",
