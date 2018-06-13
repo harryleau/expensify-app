@@ -8,6 +8,7 @@ import { addExpense, removeExpense, EditExpense } from './actions/expenses';
 import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 
+import 'react-dates/initialize';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
