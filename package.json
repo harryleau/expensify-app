@@ -7,7 +7,8 @@
     "serve": "live-server public/",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "test": "jest --watch"
   },
   "author": "Harry Le",
   "license": "MIT",
@@ -20,6 +21,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
+    "jest": "^23.1.0",
     "live-server": "^1.2.0",
     "moment": "^2.22.2",
     "node-sass": "^4.9.0",
