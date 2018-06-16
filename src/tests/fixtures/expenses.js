@@ -10,7 +10,7 @@ export default [{
   id: '2',
   description: 'Food',
   note: '',
-  amount: '10850',
+  amount: 10850,
   createdAt: 0
 }, {
   id: '3',
