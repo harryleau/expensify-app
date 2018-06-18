@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
-import { addExpense } from './../actions/expenses';
+import { startAddExpense } from './../actions/expenses';
 
 export class AddExpensePage extends React.Component {
   onSubmit = (expense) => {
-    this.props.addExpense(expense);
+    this.props.startAddExpense(expense);
     this.props.history.push('/');
   };
 
@@ -23,7 +23,7 @@ export class AddExpensePage extends React.Component {
 
 // just like mapStateToProps, it turns dispatch actions into props, so in the component we don't need to use props.dispatch(addExpense(expense)) anymore.
 const mapDispatchToProps = (dispatch) => ({
-  addExpense: (expense) => dispatch(addExpense(expense))
+  startAddExpense: (expense) => dispatch(startAddExpense(expense))
 });
 
 // first arg is mapStateToProps, we don't need it in this component, so set it to be undefined

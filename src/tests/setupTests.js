@@ -1,5 +1,7 @@
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import DotEnv from 'dotenv';
+DotEnv.config({ path: '.env.test' });
 
 // for enzyme v3 and react v16, we need to add adapter and configure it
 // besides, we have to install raf - request animation frame - without it, testing components may run into issues.
